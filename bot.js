@@ -523,7 +523,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-v";
-const devs = ['349616310734553088','335027415619338240'];
+const devs = ['408374252291751976','408374252291751976'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -2109,7 +2109,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("349616310734553088","335027415619338240").send(
+client.users.get("408374252291751976","408374252291751976").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2121,7 +2121,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : Elmusaui_GK and SpeedMC")
+     .setFooter("By : iiFireGamer")
                                                 
 
 message.channel.send(embed);
