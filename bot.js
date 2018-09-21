@@ -2330,7 +2330,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/htNpU3J**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/kZq6S7M**")
      
      
   message.channel.sendEmbed(embed);
@@ -2430,6 +2430,10 @@ client.on("message", (message) => {
         channel.delete()
     }
 });  
+
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","Fire"));
+    });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
