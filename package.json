@@ -1,26 +1,32 @@
 {
-  "name": "discord.js-heroku",
-  "version": "1.0.0",
-  "description": "Discord.js bot on Heroku",
-  "main": "bot.js",
+  "name": "fluent-ffmpeg",
+  "version": "2.1.2",
+  "description": "A fluent API to FFMPEG (http://www.ffmpeg.org)",
+  "keywords": [
+    "ffmpeg"
+  ],
+  "author": "Stefan Schaermeli <schaermu@gmail.com>",
+  "contributors": [
+    {
+      "name": "Felix Fichte",
+      "email": "spruce@space-ships.de"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "mail": "schaermu@gmail.com",
+    "url": "http://github.com/fluent-ffmpeg/node-fluent-ffmpeg/issues"
+  },
+  "repository": "git://github.com/fluent-ffmpeg/node-fluent-ffmpeg.git",
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest",
+    "jsdoc": "latest"
+  },
   "dependencies": {
-    "node": "8.x",
+    "async": ">=0.2.9",
+    "which": "^1.1.1"
     "discord.js": "^11.3.2",
-    "ffmpeg": "^0.0.4",
-    "ffmpeg-binaries": "^4.0.0",
-    "get-youtube-id": "^1.0.0",
-    "common-tags": "^1.8.0",
-    "gif-search": "^2.0.1",
-    "google-translate-api": "^2.3.0",
-    "math-expression-evaluator": "^1.2.17",
-    "node-gyp": "^3.7.0",
-    "opusscript": "^0.0.6",
-    "queue": "^4.4.2",
-    "rebuild": "^0.1.2",
-    "request": "^2.88.0",
-    "simple-youtube-api": "^5.0.2",
-    "youtube-info": "^1.2.0",
-    "ytdl-core": "^0.21.1",
     "discord.js-musicbot-addon": "^1.10.3",
     "express": "^4.16.3",
     "finalhandler": "^1.1.1",
@@ -53,21 +59,17 @@
     "sqlite": "^2.9.1",
     "youtube-info": "^1.2.0",
     "ytdl-core": "^0.20.2",
-     "ffmpeg": "0.0.4",
+    "ffmpeg": "0.0.4",
     "pretty-ms": "3.1.0", 
     "ffmpeg-binaries": "^3.2.2-3",
     "simple-youtube-api": "^5.0.2",
     "ffmpeg-binaries": "^3.2.2-3"
   },
-
-  "keywords": [
-    "heroku",
-    "discord.js"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/synicalsyntax/discord.js-heroku/issues"
+  "engines": {
+    "node": ">=0.8.0"
   },
-  "homepage": "https://github.com/synicalsyntax/discord.js-heroku#readme"
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  }
 }
