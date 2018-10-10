@@ -120,6 +120,15 @@ channel.guild.owner.send(`<@!${channelremover.id}>
   },Otime)
   });
 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('discord.gg')){
+		if(!message.channel.guild) return;
+        message.delete()
+    return message.reply(`** لا تنشر | dont share **`)
+    }
+});
+
 client.on('message', msg => {
 	var prefix = "-";
   if (msg.author.bot) return;
