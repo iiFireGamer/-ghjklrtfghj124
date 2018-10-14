@@ -13,4 +13,4 @@ client.on('guildMemberAdd', member=> {
 
 });
 
-client.login("mfa.akrW-GBF5LlZ-ol_v5491TgxHL2q8Rizwytm_Bm4zf9WcFd43nhVJqMRbPenSFJyBEJbg5hkJ1Jb3F84zWL-");
+client.login("NDkxNzI4Mzg0NjI0Mjk1OTU1.DqVMaA.3JqUhStqE7ahwfzc5MDbkdq2oVU");
