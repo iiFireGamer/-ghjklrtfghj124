@@ -17,7 +17,7 @@ client.on('message',async msg => {
      if(msg.channel.type === "dm") return;
   if(msg.author.bot) return;
   var p = "*";
-  if(msg.content.startsWith(_ + "setstats")) {
+  if(msg.content.startsWith(f + "setstats")) {
   if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('❌ **go play minecraft**');
   if(!msg.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS'])) return msg.reply('❌ **البوت لا يمتلك صلاحية**');
   var ggg= msg.guild.createChannel('#FireShop', 'category').then(kk => {
